@@ -10,6 +10,7 @@ class Deck {
 
 private:
 
+    int pointer;
     std::vector<Card> cards;
 
 public:
@@ -22,6 +23,9 @@ public:
     
     // Method that shows all the cards in the deck
     void show_deck();
+
+    // Removes the top card
+    Card draw_card();
 
 };
 

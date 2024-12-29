@@ -93,5 +93,27 @@ Card::Card(char rank, char suit){
 
 // Exhibiting what card this is
 void Card::show_card(){
-    std::cout << name[0] + " of " + name[1] << std::endl;
+    std::cout << name[0] + " of " + name[1];
+    if (revealed) std::cout << " *";
+    std::cout << std::endl;
+}
+
+// Getting the color of the card
+char Card::getColor(){
+    return color;
+}
+
+// Getting the suit
+char Card::getSuit(){
+    return suit;
+}
+
+// Getting the rank
+char Card::getRank(){
+    return rank;
+}
+
+//
+void Card::setRevealed(bool status){
+    revealed = status;
 }

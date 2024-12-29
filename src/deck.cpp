@@ -28,4 +28,11 @@ void Deck::show_deck(){
         card.show_card();
     }
 }
+
+// Function that removes the first card from the deck
+Card Deck::draw_card() { 
+    Card card = cards.back();
+    cards.pop_back();         
+    return card;              
+} 
     

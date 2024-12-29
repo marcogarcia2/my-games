@@ -38,6 +38,17 @@ public:
     // Exhibiting what card this is
     void show_card();
 
+    // Getting the color of the card
+    char getColor();
+
+    // Getting the suit
+    char getSuit();
+
+    // Getting the rank
+    char getRank();
+
+    // Setting the revealing of the card
+    void setRevealed(bool status);
 };
 
 #endif
